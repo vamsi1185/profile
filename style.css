@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f1f5ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+.container {
+  background-color: #fff;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.5rem;
+}
+.container .moon {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  right: 9%;
+  top: 7%;
+  fill: #565656;
+  transform: rotate(-10deg);
+  cursor: pointer;
+  transition: all 2sec ease-in-out;
+}
+.container .moon:hover {
+  fill: #212529;
+}
+.container .sun {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  right: 9%;
+  top: 7%;
+  stroke: #565656;
+  fill: #565656;
+  display: none;
+  transform: rotate(-10deg);
+  cursor: pointer;
+  transition: all 2sec ease-in-out;
+}
+.container .sun:hover {
+  stroke: white;
+  fill: white;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem 3.5rem;
+}
+.card .pic {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+h2 {
+  font-size: 28px;
+  color: #212529;
+}
+h3 {
+  font-size: 16px;
+  color: #565656;
+}
+h4 {
+  font-size: 16px;
+}
+.fotter {
+  margin-top: 1rem;
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+.fotter h3 {
+  font-weight: 300;
+}
+.fotter h4 {
+  font-weight: 600;
+}
+.fotter h3:nth-of-type(1) {
+  grid-column: 1/2;
+}
+.fotter h3:nth-of-type(2) {
+  grid-column: 2/3;
+}
+.fotter h3:nth-of-type(3) {
+  grid-column: 3/4;
+}
+.fotter h4 {
+  padding-left: 1.2rem;
+}
+.work {
+  margin-left: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.icons {
+  margin: 1.5rem;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.icons .img {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: all 0.4s ease-in-out;
+  fill: #565656;
+  cursor: pointer;
+}
+.icons .img:hover {
+  transform: translate(0, -50%);
+  fill: #1e5ef3;
+}
+button {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: white;
+  font-size: 20px;
+  background: #1e5ef3;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+button:hover {
+  background: #3d77ff;
+  text-decoration: none;
+}
+button .img2 {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #fff;
+}
+button h3 {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  transform: translate(0, -25%);
+}
